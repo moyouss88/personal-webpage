@@ -1,0 +1,113 @@
+:root {
+  --main-color: #2b67772b;
+  --secondary-color: #2b6777;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans KR";
+  background-color: #c8d8e4;
+}
+.navigation nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--main-color);
+  padding: 20px;
+}
+.navigation nav li {
+  list-style: none;
+}
+.navigation nav li a {
+  text-decoration: none;
+  color: white;
+}
+.navigation nav li a:hover {
+  color: var(--secondary-color);
+}
+.header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 64px);
+}
+.header .container h1 {
+  color: white;
+  font-size: 80px;
+  margin: 20px;
+  letter-spacing: 3px;
+}
+.header .container h2 {
+  color: var(--secondary-color);
+}
+.fa {
+  margin-top: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
+.main .container {
+  background-color: var(--main-color);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 40px;
+  padding: 40px;
+}
+.main .container .title {
+  font-size: 60px;
+  letter-spacing: 0.1em;
+}
+.main .container .text {
+  line-height: 3;
+}
+footer {
+  background-color: #2b67772b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  line-height: 60px;
+  letter-spacing: 0.1em;
+}
+footer .download {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+.button {
+  padding: 20px;
+  background-color: #2b677780;
+  color: white;
+}
+@media (max-width: 768px) {
+  .navigation nav {
+    flex-direction: column;
+  }
+  .header .container h1 {
+    font-size: 60px;
+  }
+  .main .container {
+    grid-template-columns: 1fr;
+  }
+  .main .container .title {
+    font-size: 40px;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
