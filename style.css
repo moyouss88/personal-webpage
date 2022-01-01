@@ -97,13 +97,16 @@ footer .download {
   padding: 20px;
   background-color: #2b677780;
   color: white;
-  border-radius: 10%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 a {
   text-decoration: none;
 }
 img {
-  border-radius: 30%;
+  width: 140.69px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
 }
 
 .slidershow {
@@ -174,6 +177,9 @@ input[name="r"] {
   }
   .main .container {
     grid-template-columns: 1fr;
+  }
+  .slidershow {
+    max-width: 215px;
   }
   .main .container .title {
     font-size: 40px;
