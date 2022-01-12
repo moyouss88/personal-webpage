@@ -1,6 +1,6 @@
 :root {
-  --main-color: #2b67772b;
-  --secondary-color: #2b6777;
+  --main-color: #393f41;
+  --secondary-color: #8fa8c0;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -11,26 +11,26 @@
 }
 body {
   font-family: "Noto Sans KR";
-  background-color: #c8d8e4;
+  background-color: #2b353d;
 }
 .navigation {
   position: fixed;
   width: 100%;
 }
-.navigation nav {
+.navigation ul {
   display: flex;
   justify-content: space-around;
-  background-color: var(--main-color);
+  background-color: #2b67772b;
   padding: 20px;
 }
-.navigation nav li {
+.navigation ul li {
   list-style: none;
 }
-.navigation nav li a {
+.navigation ul li a {
   text-decoration: none;
   color: white;
 }
-.navigation nav li a:hover {
+.navigation ul li a:hover {
   color: var(--secondary-color);
 }
 .header .container {
@@ -169,7 +169,7 @@ input[name="r"] {
 }
 
 @media (max-width: 768px) {
-  .navigation nav {
+  .navigation ul {
     flex-direction: column;
   }
   .header .container h1 {
